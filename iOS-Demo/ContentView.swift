@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var name:String = "ไอแอม ไอรอนแมน"
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+//            Image(systemName: "globe")
+//                .imageScale(.large)
+//                .foregroundStyle(.tint)
+            Text(name)
+            Button("Button") {
+                self.name = "กัปตันอเมริกา"
             }
         }
         .padding()
