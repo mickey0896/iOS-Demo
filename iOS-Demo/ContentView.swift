@@ -13,9 +13,6 @@ struct ContentView: View {
     @State var count:Int = 0
     var body: some View {
         VStack {
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
             Text(name)
                 .font(.largeTitle).foregroundColor(.orange).frame(width: 300,height: 300,alignment: .center)
             Button("สุ่มเลยจ้าาา") {
