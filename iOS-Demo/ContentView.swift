@@ -19,20 +19,9 @@ struct ContentView: View {
             Text(name)
                 .font(.largeTitle).foregroundColor(.orange).frame(width: 300,height: 300,alignment: .center)
             Button("สุ่มเลยจ้าาา") {
-                self.menu =  Int.random(in: 1...5)
-                if self.menu == 1 {
-                    self.name = "ราเมง"
-                } else if self.menu == 2{
-                    self.name = "โอยาโกะด้ง"
-                }else if self.menu == 3{
-                    self.name = "ข้่าวปั้น"
-                }else if self.menu == 4{
-                    self.name = "โอมุ"
-                }else if self.menu == 5{
-                    self.name = "ซูชิ"
-                }else {
-                    self.name = "Error"
-                }
+                self.menu =  Int.random(in: 0...4)
+                let menulist = ["ราเมง","โอยาโกะด้ง","ข้่าวปั้น","โอมุ","ซูชิ"]
+                self.name = menulist[self.menu]
                 self.count += 1
             }
             Text("สุ่มไปแล้ว " + String(count)+" ครั้ง")
